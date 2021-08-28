@@ -21,19 +21,9 @@ class GridDetailsState extends State<GridDetails> {
           crossAxisAlignment: CrossAxisAlignment.center,
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Hero(
-              tag: "image${widget.curAlbum.id}",
-              child: FadeInImage.assetNetwork(
-                placeholder: "images/no_image.png",
-                image: widget.curAlbum.url,
-              ),
-            ),
-            SizedBox(
-              height: 30.0,
-            ),
-            ElevatedButton(
-              child: Icon(Icons.close),
-              onPressed: () => Navigator.of(context).pop(),
+            FadeInImage.assetNetwork(
+              placeholder: 'assets/img.png',
+              image: widget.curAlbum.url,
             ),
           ],
         ),

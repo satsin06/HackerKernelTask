@@ -1,19 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:hackerkernel/model/album.dart';
 
-
-class AlbumCell extends StatelessWidget {
-  const AlbumCell(this.album);
+class PhotosCell extends StatelessWidget {
+  const PhotosCell(this.album);
   @required
   final Album album;
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0),
-      ),
-      color: Colors.white,
       child: Padding(
         padding: EdgeInsets.all(10.0),
         child: Container(
@@ -29,7 +24,7 @@ class AlbumCell extends StatelessWidget {
                   child: Hero(
                     tag: "image${album.id}",
                     child: FadeInImage.assetNetwork(
-                      placeholder: "images/no_image.png",
+                      placeholder: 'assets/img.png',
                       image: album.thumbnailUrl,
                       width: 100,
                       height: 100,

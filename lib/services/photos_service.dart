@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:hackerkernel/model/album.dart';
 import 'package:http/http.dart' as http;
 
-class Services {
+class PhotosServices {
   static Future<List<Album>> getPhotos() async {
     try {
       final response =
