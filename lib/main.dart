@@ -5,7 +5,7 @@ import 'package:hackerkernel/screens/login_screen.dart';
 import 'package:hackerkernel/wrapper.dart';
 import 'package:provider/provider.dart';
 
-import 'authentication_service.dart';
+import 'services/authentication_service.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -27,6 +27,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
+        debugShowCheckedModeBanner: false,
         initialRoute: '/',
         routes: {
           '/': (context) => Wrapper(),

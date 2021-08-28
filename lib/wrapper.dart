@@ -3,7 +3,7 @@ import 'package:hackerkernel/screens/home_screen.dart';
 import 'package:hackerkernel/screens/login_screen.dart';
 import 'package:provider/provider.dart';
 
-import 'authentication_service.dart';
+import 'services/authentication_service.dart';
 import 'model/user_model.dart';
 
 class Wrapper extends StatelessWidget {
